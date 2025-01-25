@@ -1,4 +1,13 @@
-const repeatString = function() {
+const repeatString = function(txt,count) {
+    let reply='';
+    if(count<0){
+        return 'ERROR';
+    }else{
+        for(let i=0;i<count;i++){
+            reply+=txt;
+        }
+    }
+    return reply;
 
 };
 
